@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Jordan Reeve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sprocket-rule left" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+<div class="sprocket-rule right" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">JORDAN&nbsp;REEVE</a>
+  <button class="nav-toggle">MENU</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="videography.html">Videography</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<section style="padding-top: 9rem;">
+  <div class="section-head">
+    <h2>Contact</h2>
+    <span class="timecode">GET IN TOUCH</span>
+  </div>
+
+  <div class="contact-layout">
+    <div>
+      <h2>Let's make something.</h2>
+      <p style="color: var(--color-text-dim); max-width: 34em;">Placeholder copy — tell visitors what kind of work you're looking to take on and how quickly you typically reply. Whether it's a wedding, a brand film, or a live show, get in touch and let's talk through what you need.</p>
+
+      <div class="contact-links">
+        <a href="mailto:hello@yourdomain.com">Email <span>hello@yourdomain.com</span></a>
+        <a href="tel:+61000000000">Phone <span>+61 0 0000 0000</span></a>
+        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram <span>@yourhandle</span></a>
+        <a href="https://vimeo.com/yourhandle" target="_blank" rel="noopener">Vimeo <span>/yourhandle</span></a>
+      </div>
+    </div>
+
+    <div>
+      <!--
+        This form has no backend yet. Easiest fix once the site is live on
+        Netlify: add data-netlify="true" to the <form> tag and a hidden
+        input named "form-name" — Netlify will then handle submissions
+        for free and email you the results. Ask Claude to wire this up
+        once your site is deployed.
+      -->
+      <form class="contact-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="project">Project type</label>
+          <input type="text" id="project" name="project" placeholder="Wedding, corporate, live music...">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="timecode">© 2026 Jordan Reeve</span>
+  <span class="timecode">
+    <a href="index.html">Home</a>
+    <a href="videography.html">Videography</a>
+  </span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

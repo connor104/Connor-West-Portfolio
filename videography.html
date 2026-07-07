@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videography — Jordan Reeve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sprocket-rule left" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+<div class="sprocket-rule right" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">JORDAN&nbsp;REEVE</a>
+  <button class="nav-toggle">MENU</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="videography.html" class="active">Videography</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section style="padding-top: 9rem;">
+  <div class="section-head">
+    <h2>Videography</h2>
+    <span class="timecode">SPORTS <span class="dot">·</span> WEDDINGS <span class="dot">·</span> CORPORATE <span class="dot">·</span> LIVE MUSIC</span>
+  </div>
+
+  <div class="filter-tabs" style="margin-bottom: 3rem;">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="sports">Sports</button>
+    <button data-filter="weddings">Weddings</button>
+    <button data-filter="corporate">Corporate</button>
+    <button data-filter="live-music">Live Music</button>
+  </div>
+
+  <div class="grid">
+
+    <!--
+      TO EMBED A REAL VIDEO instead of the placeholder-fill div:
+      replace the .placeholder-fill div with an iframe, e.g:
+      <iframe src="https://player.vimeo.com/video/YOUR_ID" style="width:100%;height:100%;border:0;" allowfullscreen></iframe>
+    -->
+
+    <div class="card" data-category="sports">
+      <div class="placeholder-fill">Vimeo/YouTube embed<br>or videos/match-day.mp4</div>
+      <div class="card-overlay">
+        <span class="card-tag">Sports</span>
+        <span class="card-title">Match Day</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sports">
+      <div class="placeholder-fill">Vimeo/YouTube embed</div>
+      <div class="card-overlay">
+        <span class="card-tag">Sports</span>
+        <span class="card-title">State Finals Recap</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="weddings">
+      <div class="placeholder-fill">Vimeo/YouTube embed</div>
+      <div class="card-overlay">
+        <span class="card-tag">Weddings</span>
+        <span class="card-title">Amara &amp; Luke</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="weddings">
+      <div class="placeholder-fill">Vimeo/YouTube embed</div>
+      <div class="card-overlay">
+        <span class="card-tag">Weddings</span>
+        <span class="card-title">A Fremantle Wedding</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="corporate">
+      <div class="placeholder-fill">Vimeo/YouTube embed</div>
+      <div class="card-overlay">
+        <span class="card-tag">Corporate</span>
+        <span class="card-title">Northbridge Brand Film</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="corporate">
+      <div class="placeholder-fill">Vimeo/YouTube embed</div>
+      <div class="card-overlay">
+        <span class="card-tag">Corporate</span>
+        <span class="card-title">Product Launch Recap</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="live-music">
+      <div class="placeholder-fill">Vimeo/YouTube embed</div>
+      <div class="card-overlay">
+        <span class="card-tag">Live Music</span>
+        <span class="card-title">Low Light Sessions</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="live-music">
+      <div class="placeholder-fill">Vimeo/YouTube embed</div>
+      <div class="card-overlay">
+        <span class="card-tag">Live Music</span>
+        <span class="card-title">Rooftop Set, Summer</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <span class="timecode">© 2026 Jordan Reeve</span>
+  <span class="timecode">
+    <a href="index.html">Home</a>
+    <a href="photography.html">Photography</a>
+    <a href="contact.html">Contact</a>
+  </span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
