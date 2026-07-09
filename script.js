@@ -1,11 +1,31 @@
 // Hide any photo/video card whose image fails to load (e.g. an empty slot
 // you haven't added a file for yet) — keeps the grid clean instead of
-// showing a broken-image icon.
+// showing a broken-image icon. If EVERY photo in a labeled section fails
+// (e.g. a whole category with zero photos added yet), hide that entire
+// section — heading included — instead of leaving an empty heading behind.
 document.querySelectorAll(".card img").forEach(img => {
-  img.addEventListener("error", () => {
+  const section = img.closest("[data-photo-section]");
+
+  const markFailed = () => {
     const card = img.closest(".card");
     if (card) card.style.display = "none";
-  });
+
+    if (section) {
+      const stillVisible = Array.from(section.querySelectorAll(".card"))
+        .some(c => c.style.display !== "none");
+      const allSettled = Array.from(section.querySelectorAll(".card img"))
+        .every(i => i.complete);
+      if (allSettled && !stillVisible) {
+        section.style.display = "none";
+      }
+    }
+  };
+
+  if (img.complete && img.naturalWidth === 0) {
+    markFailed();
+  } else {
+    img.addEventListener("error", markFailed);
+  }
 });
 
 // Mobile nav toggle
