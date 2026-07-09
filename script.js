@@ -1,3 +1,13 @@
+// Hide any photo/video card whose image fails to load (e.g. an empty slot
+// you haven't added a file for yet) — keeps the grid clean instead of
+// showing a broken-image icon.
+document.querySelectorAll(".card img").forEach(img => {
+  img.addEventListener("error", () => {
+    const card = img.closest(".card");
+    if (card) card.style.display = "none";
+  });
+});
+
 // Mobile nav toggle
 const navToggle = document.querySelector(".nav-toggle");
 const navList = document.querySelector(".site-nav ul");
