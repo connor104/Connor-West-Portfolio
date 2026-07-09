@@ -373,6 +373,39 @@ section {
   transform: scale(1.05);
 }
 
+/* ============================================
+   MASONRY GRID VARIANT (photography page)
+   Preserves each photo's natural aspect ratio —
+   no cropping, tiles vary in height.
+   ============================================ */
+.grid-masonry {
+  display: block;
+  column-count: 3;
+  column-gap: 1.75rem;
+}
+
+@media (max-width: 900px) {
+  .grid-masonry { column-count: 2; }
+}
+@media (max-width: 600px) {
+  .grid-masonry { column-count: 1; }
+}
+
+.grid-masonry .card {
+  aspect-ratio: unset;
+  height: auto;
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 1.75rem;
+}
+
+.grid-masonry .card img {
+  width: 100%;
+  height: auto;
+  object-fit: unset;
+  display: block;
+}
+
 .card .card-overlay {
   position: absolute;
   inset: 0;
