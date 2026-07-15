@@ -491,6 +491,7 @@ section {
   justify-content: flex-end;
   padding: 1.4rem;
   background: linear-gradient(to top, rgba(13,15,18,0.92) 0%, transparent 55%);
+  pointer-events: none;
 }
 
 .card .card-tag {
